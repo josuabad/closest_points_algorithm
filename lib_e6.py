@@ -88,4 +88,4 @@ def divide_conquer(plano: list[int]) -> list:
             distancia_actual = [franja[puntoA], franja[puntoB], distancia(franja[puntoA], franja[puntoB])]
             distancia_franja = min(distancia_franja, distancia_actual, key = lambda x : x[2]) #Con el key lambda x : x[2] se comprueba el segundo valor de la lista y se mira cual es el minimo
 
-    return min(distancia_minima_entre_mitades, distancia_franja, key = lambda x:x[2])
+    return min(distancia_minima_entre_mitades, distancia_franja, key = lambda x: x[2])
