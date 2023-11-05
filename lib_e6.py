@@ -56,11 +56,11 @@ def divide_conquer(plano: list[int]) -> list:
     """
     long_plano = len(plano)
 
-    if long_plano <=3: #Este es el caso base
+    if long_plano <= 3: # Este es el caso base
         return fuerza_bruta(plano)
 
     # Ordena los puntos por coordenada x
-    puntos_ordenados_x = sorted(plano, key=lambda punto: punto[0])  # Timsort
+    puntos_ordenados_x = sorted(plano, key=lambda punto: punto[0])
 
     # Divide el conjunto en dos mitades
     mitad = long_plano // 2
